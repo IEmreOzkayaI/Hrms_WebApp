@@ -1,0 +1,189 @@
+.signUp-card * {
+  box-sizing: border-box;
+}
+
+.signUp-card {
+  background-color: #edf1f7;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUp-card .signUp-card-container {
+  box-sizing: border-box;
+  width: 90%;
+  height: 90vh;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: rgba(61, 61, 75, 0.487) 7px 7px 29px 0px;
+
+}
+
+.signUp-card-container .signUp-card-left-item {
+  background-image: url(../../../assets/img/jobSeekerRegister.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-right: #797878 1px solid;
+}
+
+.signUp-card-container .signUp-card-right-item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.signUp-card-container .signUp-card-right-item .user-icon {
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/img/icons8-male-user-64.png");
+}
+
+.signUp-card-container .signUp-card-right-item .close-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  transition: all 0.5s;
+  background-image: url("../../../assets/img/icons8-close-50.png");
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+}
+
+.signUp-card-container .signUp-card-right-item .close-icon:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.signUp-card-container .signUp-card-right-item h1 {
+  font-size: 4rem;
+  color: black;
+  margin: 1rem 0 1rem 0;
+}
+
+.signUp-card-container .signUp-card-right-item h5 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  font-weight: lighter;
+  color: black;
+}
+
+.signUp-card-container .signUp-card-right-item form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUp-card-container .signUp-card-right-item input[type="password"],
+.signUp-card-container .signUp-card-right-item input[type="text"],
+.signUp-card-container .signUp-card-right-item input[type="email"] {
+  padding: 25px 10px;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2rem;
+  border: #d0d3dd 2px solid;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.signUp-card-container .signUp-card-right-item input[type="date"] {
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2rem;
+  border: #d0d3dd 2px solid;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.signUp-card-container .signUp-card-right-item label {
+  align-self: flex-start;
+}
+.signUp-card-container .signUp-card-right-item label:hover {
+  cursor: pointer;
+}
+.signUp-card-container .signUp-card-right-item label span {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+button {
+  margin-top: 2rem;
+  width: 100%;
+  height: 5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: #2357c0;
+  color: #fff;
+  border: #2357c0 1px solid;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #2357c0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.message {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: #f27474 !important;
+}
+.colored-toast.swal2-icon-success {
+  background-color: #a5dc86 !important;
+}
+
+body.swal2-shown > [aria-hidden="true"] {
+  transition: 0.1s filter;
+  filter: blur(10px);
+}
+.colored-toast.swal2-icon-warning {
+  background-color: #f8bb86 !important;
+}
+.colored-toast .swal2-title {
+  color: white;
+}
+
+.colored-toast .swal2-close {
+  color: white;
+}
+
+.colored-toast .swal2-html-container {
+  color: white;
+}

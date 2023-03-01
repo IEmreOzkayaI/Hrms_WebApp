@@ -1,0 +1,48 @@
+.sidebar .sidebar-content{
+    display: none;
+}   
+
+.sidebar.show .sidebar-content {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: #2357c0 1px solid;
+    box-sizing: border-box;
+    font-size: 2rem;
+    visibility: visible;
+    display: block;
+}
+
+.sidebar .sidebar-content form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.sidebar .sidebar-content form select,
+.sidebar .sidebar-content form input,
+.sidebar .sidebar-content form select option {
+    margin-left: 8rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+.sidebar .sidebar-content form button {
+    float: right;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: #2357c0;
+    border: none;
+    color: #fff;
+    opacity: .7;
+    margin-top: -.1rem;
+    border: transparent;
+}
+
+.sidebar .sidebar-content form button:hover {
+    opacity: 1;
+}

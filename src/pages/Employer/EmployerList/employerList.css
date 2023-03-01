@@ -1,0 +1,99 @@
+/* width */
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset rgba(173, 193, 243, 0.554) 0px 7px 29px 0px; 
+           border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2357c0;
+    border-radius: 5px;
+}
+
+
+.employer {
+    box-sizing: border-box;
+    margin: 2rem auto 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 84vh;
+
+}
+
+.employer .card {
+    width: 80%;
+    height: 12rem;
+    margin: 2rem auto;
+    border: #2357c0 2px solid;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.employer .card:first-child {
+    margin-top: 0;
+}
+.employer .card:last-child {
+    margin-bottom: 0;
+}
+.employer .card:hover {
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.employer .card:hover>.card-header {
+    visibility: hidden;
+}
+
+.employer .card:hover .card-header>.detail-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    display: inline-block;
+    transform: translate(-40%, -40%);
+    color: #2357c0;
+    font-weight: bold;
+    font-size: 2rem;
+    
+
+}
+
+.employer .card .card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 0 1rem;
+    position: relative;
+
+}
+
+.employer .card .card-header .detail-link {
+    display: none;
+
+}
+
+
+.employer .card .card-header img {
+    width: 40%;
+    margin: 1rem 0 1rem 0;
+}
+
+.employer .card .card-header .employer-name {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #656a73;
+    margin-top: 1rem;
+    padding-top: .5rem;
+    width: 100%;
+    border-top: #2357c0 2px solid;
+}
+
+
+

@@ -1,0 +1,47 @@
+.jobPostDetail{
+    margin-top: 2rem;
+    padding: 2rem 2rem 2rem 0;
+    width: 100%;
+    height: 84vh;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.jobPostDetail .jobPostDetail-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #2357c0 1px solid;
+    margin-bottom: 1rem;
+}
+.jobPostDetail h1{
+    font-size: 5rem;
+}
+.jobPostDetail .jobPostDetail-header button{
+    display: inline-block;
+    width: 15%;
+    font-size: 2rem;
+    margin-top: 0;
+    color: #2357c0;
+    background-color: transparent;
+    border: #2357c0 1px solid;
+    font-weight: 400;
+}
+.jobPostDetail .jobPostDetail-header button:hover{
+    color: #fff;
+    background-color: #2357c0;
+}
+.jobPostDetail h4{
+    margin-top: 0.1rem;
+    font-size: 1.1rem;
+}
+.jobPostDetail h4:last-of-type{
+    margin-bottom: 1rem;
+}
+.jobPostDetail .job-description-content,.jobPostDetail .job-requirements-content{
+    text-align: justify;
+    margin: 1rem 1rem 1rem 0;
+    font-weight: 400;
+}
+.jobPostDetail div{
+    margin-top: .1rem;
+}
